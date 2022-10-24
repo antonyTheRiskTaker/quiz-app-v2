@@ -21,6 +21,8 @@ app.use(express.static(__dirname + '/public'));
 // Route handlers
 app.get('/', handlers.home);
 
+app.get('/signup', handlers.signup);
+
 app.listen(PORT, () => {
   console.log(`Listening to ${PORT}`);
 });
