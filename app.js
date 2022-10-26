@@ -23,6 +23,8 @@ app.get('/', handlers.home);
 
 app.get('/signup', handlers.signup);
 
+app.get('/signin', handlers.signin);
+
 app.listen(PORT, () => {
   console.log(`Listening to ${PORT}`);
 });
