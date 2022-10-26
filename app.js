@@ -7,6 +7,11 @@ const handlers = require('./lib/handlers');
 
 const app = express();
 
+// `req.body` is now accessible
+app.use(express.urlencoded({ extended: true }));
+// JSON payloads are now available for further processing
+app.use(express.json());
+
 // Configure handlebars view engine
 app.engine('.hbs', engine({
   defaultLayout: 'main',
