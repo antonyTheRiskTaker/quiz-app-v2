@@ -1,1 +1,57 @@
-<h1>This is Log in page</h1>
+<!-- (Line below) 'is-fullheight-with-navbar' is used so that the navbar and the hero section don't overlap -->
+<section class="hero is-primary is-fullheight-with-navbar">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <!--! (Line below) you can try different screen-size classes -->
+        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+          <h1 class="is-size-3 mb-2 has-text-weight-bold has-text-centered">
+            Log in
+          </h1>
+          <!-- TODO: make the form send back user info to backend -->
+          <form class="box">
+            <!--TODO (optional): Can add a logo here -->
+            <!-- Email field -->
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input 
+                  type="email" 
+                  class="input" 
+                  placeholder="bojo@gmail.com"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+            <!-- Password field -->
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control has-icons-left">
+                <!-- TODO: (line below) make sure password is 8-character long -->
+                <input 
+                  type="password" 
+                  class="input" 
+                  placeholder="********"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+            </div>
+            <!-- signin submit button -->
+            <div class="field">
+              <!-- TODO: (line below) make it a submit button -->
+              <button class="button is-success">
+                Log in
+              </button>
+            </div>
+            <!-- TODO: could add a forgot-your-password? feature -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
