@@ -26,6 +26,8 @@ app.use(express.static(__dirname + '/public'));
 // Route handlers
 app.get('/', handlers.home);
 
+app.get('/about', handlers.about);
+
 app.get('/signup', handlers.signup);
 
 app.get('/signin', handlers.signin);
