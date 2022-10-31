@@ -1,48 +1,40 @@
-<div class="hero is-info">
+<!-- (Line below) add 'is-fullheight' or 'is-fullheight-with-navbar' to hero div to make the entire quiz section full page  -->
+<!-- TODO: (Line below) make the quiz box centered -->
+<div class="hero is-info is-fullheight-with-navbar">
   <div class="hero-body">
     <div class="box">
       <!--! (Line below) the whole question columns need to be hidden at start and when game over -->
-      <div class="columns is-multiline">
+      <div class="columns">
         <div class="column is-12">
           <p class="has-text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem numquam iure soluta odit expedita tempore eos veritatis quidem est?
           </p>
         </div>
-        <div class="column">
-          <button class="button">Answer 1</button>
+      </div>
+      <!--! (Line below) the whole answer columns need to be hidden at start  -->
+      <div class="columns is-multiline">
+        <div class="column is-half-desktop">
+          <button class="button is-fullwidth">Answer 1</button>
         </div>
-        <div class="column">
-          <button class="button">Answer 2</button>
+        <div class="column is-half-desktop">
+          <button class="button is-fullwidth">Answer 2</button>
         </div>
-        <div class="column">
-          <button class="button">Answer 3</button>
+        <div class="column is-half-desktop">
+          <button class="button is-fullwidth">Answer 3</button>
         </div>
-        <div class="column">
-          <button class="button">Answer 4</button>
+        <div class="column is-half-desktop">
+          <button class="button is-fullwidth">Answer 4</button>
         </div>
-        <!-- <div class="column is-half is-offset-one-quarter is-centered"></div>
-        <div class="column is-half is-offset-one-quarter"></div> -->
-        <!-- <div class="column is-half is-offset-one-quarter">
-          <button id="start-btn" class="button">Start</button>
-          <button id="next-btn" class="button">Next</button>
-        </div> -->
+      </div>
+      <div class="columns is-centered">
+        <!--! (Lines below) both column and button need to be hidden after the game starts  -->
+        <div class="column is-one-quarter">
+          <button id="start-btn" class="button is-fullwidth">Start</button>
+        </div>
+        <div class="column is-one-quarter">
+          <button id="next-btn" class="button is-fullwidth">Next</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<!--! (Line below) needs to be hidden after the game starts  -->
-      <!-- <div class="columns">
-      <button id="start-btn" class="button">Start</button>
-      <button id="next-btn" class="button">Next</button>
-    </div> -->
-
-<!-- <div id="question-container">
-  <div id="question">Question</div>
-  <div class="buttons">
-    
-  </div>
-</div>
-<div class="buttons">
-  
-</div> -->
