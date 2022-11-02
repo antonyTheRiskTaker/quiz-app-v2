@@ -34,6 +34,8 @@ app.get('/signin', handlers.signin);
 
 app.get('/quiz', handlers.quiz);
 
+app.get('/profile', handlers.profile);
+
 app.listen(PORT, () => {
   console.log(`Listening to ${PORT}`);
 });
