@@ -16,15 +16,14 @@
     <div class="navbar-start">
       <a href="/about" class="navbar-item">About</a>
       <!--! (Line below) toggle off is-hidden after user authentication -->
-      <!-- TODO: (Line below) working on quiz ui, will hide it after finished -->
+      <!--* (Line below) quiz page prototype is finished; can add 'is-hidden' selector back to the nav item -->
       <a href="/quiz" class="navbar-item">Quiz</a>
-      <!--! (Line below) toggle off is-hidden after user authentication -->
-      <a class="navbar-item is-hidden">Profile</a>
     </div>
 
-    {{!-- signup & signin links on the left --}}
+    {{!-- signup & signin links --}}
     <div class="navbar-end">
-      <div class="navbar-item">
+      <!--! (This nav item) hide it once user is logged in -->
+      <div class="navbar-item is-hidden">
         <div class="buttons">
           <a href="/signup" class="button is-primary">
             <strong>Sign up</strong>
@@ -34,6 +33,36 @@
           </a>
         </div>
       </div>
+
+      {{!-- Logged-in user links --}}
+      <!--! (logged-in nav item) make it visible after logged in -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link">
+          Username
+        </div>
+        <div class="navbar-dropdown">
+          <a href="/profile" class="navbar-item">
+            <div>
+              <!-- TODO: (Lines below) can add space between icon and text -->
+              <span class="icon is-small">
+                <i class="fa fa-user-circle-o"></i>
+              </span>
+              Profile
+            </div>
+          </a>
+          <!--? (Line below) does signout button need a href? -->
+          <a class="navbar-item">
+            <div>
+              <!-- TODO: (Lines below) can add space between icon and text -->
+              <span class="icon is-small">
+                <i class="fa fa-sign-out"></i>
+              </span>
+              Sign Out
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
+
   </div>
 </nav>
